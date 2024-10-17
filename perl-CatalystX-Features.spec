@@ -8,7 +8,7 @@ Release:    %mkrel 1
 Summary:    Root Controller for Test
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/CatalystX/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Carp)
