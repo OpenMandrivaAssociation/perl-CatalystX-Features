@@ -1,15 +1,15 @@
 %define upstream_name    CatalystX-Features
-%define upstream_version 0.20
+%define upstream_version 0.26
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Version:    %{upstream_version}
+Release:    1
 
 Summary:    Root Controller for Test
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/CatalystX/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/CatalystX-Features
+Source0:    https://cpan.metacpan.org/authors/id/V/VT/VTI/CatalystX-Features-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Carp)
