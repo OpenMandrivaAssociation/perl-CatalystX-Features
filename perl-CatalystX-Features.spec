@@ -1,15 +1,13 @@
 %define upstream_name    CatalystX-Features
-%define upstream_version 0.26
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    1
+Version:    0.26
+Release:    2
 
 Summary:    Root Controller for Test
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://metacpan.org/dist/CatalystX-Features
-Source0:    https://cpan.metacpan.org/authors/id/V/VT/VTI/CatalystX-Features-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/V/VT/VTI/CatalystX-Features-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Carp)
@@ -40,7 +38,7 @@ specific application parts. And, say, you wish to split the functionality
 in diretories, or just want to keep them out of the application core files.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
